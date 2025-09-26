@@ -8,12 +8,17 @@ public class Main {
         String message = "Число: ";
         System.out.println(message + number);
 
-        // НОВЫЙ КОД - вычисляем квадрат числа
+        // Новый код - вычисляем квадрат числа
         int square = number * number;
         System.out.println("Квадрат числа: " + square);
 
         // Ещё новое - приветствие по имени
         String name = "Виктор";
         System.out.println("Привет, " + name + "!");
+
+        // Тестируем новый класс Name
+        Name userName = new Name("Виктор", "Степутенко");
+        System.out.println("Полное имя: " + userName.getFullName());
+        System.out.println("Инициалы: " + userName.getInitials());
     }
 }
